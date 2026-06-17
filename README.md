@@ -20,6 +20,7 @@ pip install pandas numpy matplotlib seaborn scikit-learn jupyter
 ## Notebooks
 
 - `google/datasets/diversity_clustering.ipynb` — sklearn / PCA / clustering baseline
-- `google/gamma_sol.ipynb` — same brief, **GAMMA_DNA only**
+- `google/gamma_sol.ipynb` — same brief, **GAMMA_DNA only** (legacy shim + v1 helpers)
+- `google/gamma_sol_v2.ipynb` — same brief, **GAMMA_DNA v2 only** (lineage, warehouse, segment clustering)
 - `sony-research/gamma_sol.ipynb` — churn case study, **GAMMA_DNA v2 only**
 - `N2O/gamma_sol.ipynb` — N26 income/expense regression, **GAMMA_DNA v2 only** (`datasets 2/`)
