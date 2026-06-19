@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "created_at": "2026-06-18T04:50:12.383387+00:00",
+  "stages": [
+    {
+      "name": "raw",
+      "layer": "silver",
+      "parent": null,
+      "inputs": null,
+      "source_path": null,
+      "source": "internal",
+      "parquet": "silver/raw.pkl",
+      "active_stage": false
+    },
+    {
+      "name": "cleaned_raw",
+      "layer": "silver",
+      "parent": "raw",
+      "inputs": null,
+      "source_path": null,
+      "source": "pipe",
+      "parquet": "silver/cleaned_raw.pkl",
+      "active_stage": false
+    },
+    {
+      "name": "featured",
+      "layer": "silver",
+      "parent": "cleaned_raw",
+      "inputs": null,
+      "source_path": null,
+      "source": "pipe",
+      "parquet": "silver/featured.pkl",
+      "active_stage": true
+    }
+  ]
+}

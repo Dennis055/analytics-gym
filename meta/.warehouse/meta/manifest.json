@@ -1,0 +1,36 @@
+{
+  "version": 1,
+  "created_at": "2026-06-18T02:18:15.382060+00:00",
+  "stages": [
+    {
+      "name": "raw",
+      "layer": "silver",
+      "parent": null,
+      "inputs": null,
+      "source_path": null,
+      "source": "internal",
+      "parquet": "silver/raw.parquet",
+      "active_stage": false
+    },
+    {
+      "name": "movies_clean",
+      "layer": "silver",
+      "parent": "raw",
+      "inputs": null,
+      "source_path": null,
+      "source": "pipe",
+      "parquet": "silver/movies_clean.parquet",
+      "active_stage": false
+    },
+    {
+      "name": "featured",
+      "layer": "silver",
+      "parent": "movies_clean",
+      "inputs": null,
+      "source_path": null,
+      "source": "pipe",
+      "parquet": "silver/featured.parquet",
+      "active_stage": true
+    }
+  ]
+}
